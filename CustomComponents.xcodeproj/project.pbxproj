@@ -13,6 +13,12 @@
 		27A58C912B95114000B0F65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A58C8F2B95114000B0F65F /* Main.storyboard */; };
 		27A58C932B95114300B0F65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A58C922B95114300B0F65F /* Assets.xcassets */; };
 		27A58C962B95114300B0F65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A58C942B95114300B0F65F /* LaunchScreen.storyboard */; };
+		27A58CA02B95118D00B0F65F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A58C9F2B95118D00B0F65F /* Button.swift */; };
+		27A58CA22B9511A400B0F65F /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A58CA12B9511A400B0F65F /* TextField.swift */; };
+		27A58CA42B95121200B0F65F /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A58CA32B95121200B0F65F /* CustomView.swift */; };
+		27A58CA62B9522F200B0F65F /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A58CA52B9522F200B0F65F /* CustomTextView.swift */; };
+		27EB36502B95A5E3002DFE75 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 27EB364F2B95A5E3002DFE75 /* NVActivityIndicatorView */; };
+		27EB36522B95A5E3002DFE75 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 27EB36512B95A5E3002DFE75 /* NVActivityIndicatorViewExtended */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		27A58C922B95114300B0F65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27A58C952B95114300B0F65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27A58C972B95114300B0F65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27A58C9F2B95118D00B0F65F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		27A58CA12B9511A400B0F65F /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		27A58CA32B95121200B0F65F /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		27A58CA52B9522F200B0F65F /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EB36502B95A5E3002DFE75 /* NVActivityIndicatorView in Frameworks */,
+				27EB36522B95A5E3002DFE75 /* NVActivityIndicatorViewExtended in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,7 @@
 		27A58C882B95114000B0F65F /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				27A58C9D2B95116300B0F65F /* uiutil */,
 				27A58C892B95114000B0F65F /* AppDelegate.swift */,
 				27A58C8B2B95114000B0F65F /* SceneDelegate.swift */,
 				27A58C8D2B95114000B0F65F /* ViewController.swift */,
@@ -65,6 +78,25 @@
 				27A58C972B95114300B0F65F /* Info.plist */,
 			);
 			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		27A58C9D2B95116300B0F65F /* uiutil */ = {
+			isa = PBXGroup;
+			children = (
+				27A58C9E2B95117500B0F65F /* components */,
+			);
+			path = uiutil;
+			sourceTree = "<group>";
+		};
+		27A58C9E2B95117500B0F65F /* components */ = {
+			isa = PBXGroup;
+			children = (
+				27A58C9F2B95118D00B0F65F /* Button.swift */,
+				27A58CA12B9511A400B0F65F /* TextField.swift */,
+				27A58CA32B95121200B0F65F /* CustomView.swift */,
+				27A58CA52B9522F200B0F65F /* CustomTextView.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,10 @@
 			dependencies = (
 			);
 			name = CustomComponents;
+			packageProductDependencies = (
+				27EB364F2B95A5E3002DFE75 /* NVActivityIndicatorView */,
+				27EB36512B95A5E3002DFE75 /* NVActivityIndicatorViewExtended */,
+			);
 			productName = CustomComponents;
 			productReference = 27A58C862B95114000B0F65F /* CustomComponents.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 27A58C7D2B95114000B0F65F;
+			packageReferences = (
+				27EB364E2B95A5E3002DFE75 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = 27A58C872B95114000B0F65F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A58CA22B9511A400B0F65F /* TextField.swift in Sources */,
+				27A58CA02B95118D00B0F65F /* Button.swift in Sources */,
 				27A58C8E2B95114000B0F65F /* ViewController.swift in Sources */,
+				27A58CA42B95121200B0F65F /* CustomView.swift in Sources */,
+				27A58CA62B9522F200B0F65F /* CustomTextView.swift in Sources */,
 				27A58C8A2B95114000B0F65F /* AppDelegate.swift in Sources */,
 				27A58C8C2B95114000B0F65F /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +406,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27EB364E2B95A5E3002DFE75 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27EB364F2B95A5E3002DFE75 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27EB364E2B95A5E3002DFE75 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		27EB36512B95A5E3002DFE75 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27EB364E2B95A5E3002DFE75 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27A58C7E2B95114000B0F65F /* Project object */;
 }
